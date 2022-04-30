@@ -1,0 +1,24 @@
+epochs:
+  desc: Number of epochs to train over
+  value: 500
+batch_size:
+  desc: Size of each mini-batch
+  value: 1
+learning_rate:
+  desc: Learning rate used while training
+  value: 0.0001
+dataset_path:
+  desc: Path to the desired dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/ct_data"
+seg_path:
+  desc: Path to the segmentation dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/seg_data/val"
+input_type:
+  desc: Type of the input CT (pre or aorta)
+  value: "aorta"
+label_type:
+  desc: Type of the output CT (pre or aorta)
+  value: "pre"
+save_path:
+  desc: Path to save the model weights
+  value: "/home/fr2zyroom/kaeunkim/baseline_registration/ViT-V-Net"

@@ -1,0 +1,39 @@
+epochs:
+  desc: Number of epochs to train over
+  value: 500
+batch_size:
+  desc: Size of each mini-batch
+  value: 1
+learning_rate:
+  desc: Learning rate used while training
+  value: 0.0001
+img_size:
+  desc: input image size
+  value: 512, 512, 64
+in_chans:
+  desc: number of input channels
+  value: 2
+window_size:
+  desc: window size
+  value: 16, 16, 2
+embed_dim:
+  desc: embedding dimension
+  value: 96
+dataset_path:
+  desc: Path to the desired dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/ct_data"
+seg_path:
+  desc: Path to the segmentation dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/seg_data"
+input_type:
+  desc: Type of the input CT (pre or aorta)
+  value: "aorta"
+label_type:
+  desc: Type of the output CT (pre or aorta)
+  value: "pre"
+save_path:
+  desc: Path to save the model weights
+  value: "/home/fr2zyroom/kaeunkim/baseline_registration/voxelmorph-diff"
+dice_loss_weight:
+  desc: Weight of the dice loss that is added during training
+  value: 1

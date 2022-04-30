@@ -1,0 +1,33 @@
+dataset_dir:
+  desc: Root directory of the test dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/ct_data/test"
+seg_path:
+  desc: Path to the segmentation dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/seg_data/test"  
+input_type:
+  desc: Type of the input CT (pre or aorta)
+  value: "pre"
+label_type:
+  desc: Type of the output CT (pre or aorta)
+  value: "aorta"
+model_path:
+  desc: Path to the model that contains the desired model weight (pth.tar file)
+  value: "/home/fr2zyroom/kaeunkim/baseline_registration/voxelmorph-diff/2022-03-04-06:17:57/dsc0.639.pth.tar"
+save_path:
+  desc: Path to save the test outputs
+  value: "/home/fr2zyroom/kaeunkim/transmorph_inference_opp/voxelmorph_diff/test"
+inference_analyze_save_path:
+  desc: Path to save the result of the analysis of the inference dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_inference_opp/voxelmorph_diff/test"  
+img_size:
+  desc: input image size
+  value: 512, 512, 64
+in_chans:
+  desc: number of input channels
+  value: 2
+window_size:
+  desc: window size
+  value: 16, 16, 2
+embed_dim:
+  desc: embedding dimension
+  value: 96  

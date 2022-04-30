@@ -1,0 +1,21 @@
+dataset_dir:
+  desc: Root directory of the test dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/ct_data/val"
+seg_path:
+  desc: Path to the segmentation dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_input/seg_data/val"  
+input_type:
+  desc: Type of the input CT (pre or aorta)
+  value: "pre"
+label_type:
+  desc: Type of the output CT (pre or aorta)
+  value: "aorta"
+model_path:
+  desc: Path to the model that contains the desired model weight (pth.tar file)
+  value: "/home/fr2zyroom/kaeunkim/baseline_registration/ViT-V-Netdsc0.656.pth.tar"
+save_path:
+  desc: Path to save the test outputs
+  value: "/home/fr2zyroom/kaeunkim/transmorph_inference_opp/vit-v-net/val"
+inference_analyze_save_path:
+  desc: Path to save the result of the analysis of the inference dataset
+  value: "/home/fr2zyroom/kaeunkim/transmorph_inference_opp/vit-v-net/val"  

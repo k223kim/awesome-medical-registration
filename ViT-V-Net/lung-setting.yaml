@@ -1,0 +1,24 @@
+epochs:
+  desc: Number of epochs to train over
+  value: 500
+batch_size:
+  desc: Size of each mini-batch
+  value: 1
+learning_rate:
+  desc: Learning rate used while training
+  value: 0.0001
+dataset_path:
+  desc: Path to the desired dataset
+  value: "/home/kaeunkim/ViT-V-Net_for_3D_Image_Registration_Pytorch/lung_window"
+seg_path:
+  desc: Path to the segmentation dataset
+  value: "/home/kaeunkim/ViT-V-Net_for_3D_Image_Registration_Pytorch/dataset_seg/val"
+input_type:
+  desc: Type of the input CT (pre or aorta)
+  value: "aorta"
+label_type:
+  desc: Type of the output CT (pre or aorta)
+  value: "pre"
+save_path:
+  desc: Path to save the model weights
+  value: "/home/kaeunkim/ViT-V-Net_for_3D_Image_Registration_Pytorch/ViT-V-Net/experiments/lung_setting/augmentation/"
